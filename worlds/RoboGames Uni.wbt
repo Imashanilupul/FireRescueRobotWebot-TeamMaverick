@@ -8,8 +8,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.4196389782813913 0.48653700323283355 0.7662798916793809 1.688817755814014
-  position -2.367841612054098 -2.802962299291911 5.242742535333874
+  orientation -0.5134497669327156 0.5255381317310324 0.6783649526128218 1.9277691836780748
+  position 0.42394566381160265 -2.839699826962234 11.49121515859827
 }
 TexturedBackground {
 }
@@ -17,6 +17,556 @@ Group {
   children [
     Wall {
       translation -3.53 1.35 0
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 -0.38 0
+      name "wall(61)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 0.13 0
+      name "wall(64)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 1.13 0
+      name "wall(87)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 2.13 0
+      name "wall(98)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.5 2.38 0
+      name "wall(111)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0 2.38 0
+      name "wall(112)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.25 2.13 0
+      name "wall(100)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 2.13 0
+      name "wall(101)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 2.38 0
+      name "wall(117)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 2.13 0
+      name "wall(119)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 0.87 0
+      name "wall(107)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 0.63 0
+      name "wall(204)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 1.38 0
+      name "wall(120)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.75 1.63 0
+      name "wall(128)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.5 1.12 0
+      name "wall(122)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.75 0.88 0
+      name "wall(136)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.25 0.88 0
+      name "wall(137)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 0.62 0
+      name "wall(110)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.25 0.13 0
+      name "wall(191)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.74 0.13 0
+      name "wall(202)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 1.62 0
+      name "wall(91)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.5 1.88 0
+      name "wall(95)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 1.37 0
+      name "wall(89)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 0.87 0
+      name "wall(88)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.5 0.37 0
+      name "wall(73)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 1.13 0
+      name "wall(105)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 0.63 0
+      name "wall(74)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 0.13 0
+      name "wall(65)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 -0.12 0
+      name "wall(62)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.5 -0.12 0
+      name "wall(69)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.25 -0.38 0
+      name "wall(57)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 -1.12 0
+      name "wall(46)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 -0.88 0
+      name "wall(44)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 -0.88 0
+      name "wall(152)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 -0.63 0
+      name "wall(154)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 -0.38 0
+      name "wall(197)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 -0.38 0
+      name "wall(198)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2 1.38 0
+      name "wall(38)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2 -0.37 0
+      name "wall(35)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2 -2.13 0
+      name "wall(30)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 -2.37 0
+      name "wall(144)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 -2.37 0
+      name "wall(147)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 -1.87 0
+      name "wall(159)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.5 -1.39 0
+      name "wall(171)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.25 -1.37 0
+      name "wall(176)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.25 -0.87 0
+      name "wall(179)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 -0.63 0
+      name "wall(180)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.5 -2.12 0
+      name "wall(165)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.25 -2.12 0
+      name "wall(173)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2 -1.37 0
+      name "wall(29)"
       size 0.01 0.25 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
@@ -59,8 +609,305 @@ Group {
       }
     }
     Wall {
+      translation -0.5 -0.75 0
+      name "wall(56)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 -2.26 0
+      name "wall(52)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 -1.5 0
+      name "wall(53)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 -2 0
+      name "wall(145)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 -1.5 0
+      name "wall(162)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.75 -1.75 0
+      name "wall(166)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.75 -1 0
+      name "wall(182)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.25 -2 0
+      name "wall(141)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 -2.25 0
+      name "wall(47)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.25 1.75 0
+      name "wall(39)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -5.48 1.3 0
+      name "wall(34)"
+      size 0.01 1.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 0.51 0
+      name "wall(37)"
+      size 0.01 1.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 -1 0
+      name "wall(32)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
       translation -2.26 0.51 0
       name "wall(14)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 0.5 0
+      name "wall(72)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.5 0.75 0
+      name "wall(86)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.25 1.5 0
+      name "wall(82)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.5 1.75 0
+      name "wall(99)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 2 0
+      name "wall(93)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.26 0.5 0
+      name "wall(76)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 0.75 0
+      name "wall(108)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 -0.26 0
+      name "wall(200)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 1.51 0
+      name "wall(114)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 1.75 0
+      name "wall(116)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 2 0
+      name "wall(129)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 1.25 0
+      name "wall(134)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.49 0.5 0
+      name "wall(193)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.5 -0.01 0
+      name "wall(195)"
       size 0.01 0.5 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
@@ -81,9 +928,196 @@ Group {
       }
     }
     Wall {
+      translation 1.49 -0.62 0
+      name "wall(183)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 0.13 0
+      name "wall(189)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 -1.88 0
+      name "wall(157)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 -1.88 0
+      name "wall(168)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 0.62 0
+      name "wall(78)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0 1.37 0
+      name "wall(80)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 1.62 0
+      name "wall(102)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.5 1.87 0
+      name "wall(124)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 1.37 0
+      name "wall(84)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 -1.88 0
+      name "wall(50)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.5 -0.62 0
+      name "wall(41)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 -1.88 0
+      name "wall(31)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.25 -0.88 0
+      name "wall(17)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
       translation -4.85 1.35 0
       name "wall(7)"
       size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0 -0.25 0
+      name "wall(155)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.25 -1.01 0
+      name "wall(185)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 -1.5 0
+      name "wall(148)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -5.15 1.35 0
+      name "wall(19)"
+      size 0.01 1.25 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
           scale 2.4 1
@@ -106,6 +1140,630 @@ Group {
       translation -3.78 -0.890015 0
       rotation 0 0 1 1.5708
       name "wall(1)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.37 -0.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(58)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.88 -0.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(59)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.12 -0.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(60)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.62 -1.036e-05 0
+      rotation 0 0 1 1.5708
+      name "wall(67)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.62 -0.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(68)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.88 0.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(66)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.13 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(81)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.12 2.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(113)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.38 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(103)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.62 1.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(115)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.37 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(123)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.63 2.23999 0
+      rotation 0 0 1 1.5708
+      name "wall(125)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.63 1.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(126)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.87 1.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(130)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 1.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(133)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.38 0.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(139)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 0.25999 0
+      rotation 0 0 1 1.5708
+      name "wall(190)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.13 2.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(131)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.37 1.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(132)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.12 1.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(121)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.38 1.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(104)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.13 0.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(109)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.88 -1.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(54)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.13 -1.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(142)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.12 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(143)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.63 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(146)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.87 -2.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(156)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.62 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(163)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.13 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(186)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.13 -0.74001 0
+      rotation 0 0 1 1.5708
+      name "wall(187)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.62 0.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(203)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.38 -1.27553e-05 0
+      rotation 0 0 1 1.5708
+      name "wall(199)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.12 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(158)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.37 -1.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(160)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.62 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(164)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.88 -2.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(169)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.13 -1.74001 0
+      rotation 0 0 1 1.5708
+      name "wall(170)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.38 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(172)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.38 -1.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(174)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.38 -1.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(177)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 -0.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(178)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(175)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.38 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(48)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.37 -0.500014 0
+      rotation 0 0 1 1.5708
+      name "wall(42)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.37 -1.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(43)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.88 -0.500015 0
+      rotation 0 0 1 1.5708
+      name "wall(36)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.88 -1.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(28)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.12 1.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(24)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.88 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(92)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.12 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(21)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.13 0.00998496 0
+      rotation 0 0 1 1.5708
+      name "wall(18)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.13 -1.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(16)"
       size 0.01 0.25 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
@@ -163,6 +1821,342 @@ Group {
       }
     }
     Wall {
+      translation 0.74 -1.51001 0
+      rotation 0 0 1 1.5708
+      name "wall(161)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.75 -1.51001 0
+      rotation 0 0 1 1.5708
+      name "wall(167)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.5 -1.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(184)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 -0.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(181)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 -0.24001 0
+      rotation 0 0 1 1.5708
+      name "wall(188)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 0.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(77)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.75 -0.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(196)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 2.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(118)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2 0.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(138)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.76 0.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(192)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(94)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 1.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(96)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 -1.01e-05 0
+      rotation 0 0 1 1.5708
+      name "wall(63)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.49 0.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(70)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.87 0.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(71)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.37 0.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(75)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.63 1.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(83)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.63 1.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(106)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.37 1.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(90)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.12 0.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(85)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.13 0.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(79)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 1.74999 0
+      rotation 0 0 1 1.5708
+      name "wall(127)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 2.12 1.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(135)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.75 -2.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(51)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.25 -1.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(49)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1 -0.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(45)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.75 -2.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(26)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2 -0.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(22)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
       translation -2.26 1.00999 0
       rotation 0 0 1 1.5708
       name "wall(11)"
@@ -187,10 +2181,189 @@ Group {
       }
     }
     Wall {
-      translation -3.81 -1.73001 0
+      translation -0.13 -1.49001 0
+      rotation 0 0 1 1.5708
+      name "wall(150)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -4.85 1.35 0
+      name "wall(149)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.38 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(55)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.38 -1.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(40)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.88 -0.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(33)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.63 -1.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(27)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.89 1.25999 0
+      rotation 0 0 1 1.5708
+      name "wall(23)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.6 -1.65001 0
       rotation 0 0 1 1.5708
       name "wall(4)"
       size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1 0.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(194)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.24 0.00999095 0
+      rotation 0 0 1 1.5708
+      name "wall(201)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.49 -1.00001 0
+      rotation 0 0 1 1.5708
+      name "wall(151)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 0.25 -0.75001 0
+      rotation 0 0 1 1.5708
+      name "wall(153)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation 1.56e-06 -2.25001 0
+      rotation 0 0 1 1.5708
+      name "wall(140)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.81 -2.04001 0
+      rotation 0 0 1 1.5708
+      name "wall(20)"
+      size 0.01 1.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -0.12 1.99999 0
+      rotation 0 0 1 1.5708
+      name "wall(97)"
+      size 0.01 1.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -1.63 2.24999 0
+      rotation 0 0 1 1.5708
+      name "wall(25)"
+      size 0.01 1.25 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
           scale 2.4 1
