@@ -8,8 +8,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.5134497669327156 0.5255381317310324 0.6783649526128218 1.9277691836780748
-  position 0.42394566381160265 -2.839699826962234 11.49121515859827
+  orientation -0.5564843707477297 0.5928545012359197 0.5821071082522632 2.0313869030802176
+  position 0.0309089249136873 -0.028462883322118028 12.489156954516487
 }
 TexturedBackground {
 }
@@ -1884,6 +1884,18 @@ Group {
       translation 0.75 0.99999 0
       rotation 0 0 1 1.5708
       name "wall(77)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.6732e-08 0.49999 0
+      rotation 0 0 1 1.5708
+      name "wall(205)"
       size 0.01 0.5 0.1
       appearance Roughcast {
         textureTransform TextureTransform {
