@@ -1,0 +1,634 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.4196389782813913 0.48653700323283355 0.7662798916793809 1.688817755814014
+  position -2.367841612054098 -2.802962299291911 5.242742535333874
+}
+TexturedBackground {
+}
+Group {
+  children [
+    Wall {
+      translation -3.53 1.35 0
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.25 -2.12 0
+      name "wall(12)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.25 -1.62 0
+      name "wall(13)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.98 1.35 0
+      name "wall(5)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.26 0.51 0
+      name "wall(14)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -4.42 1.35 0
+      name "wall(6)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -4.85 1.35 0
+      name "wall(7)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.01 0.51 0
+      name "wall(15)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.78 -0.890015 0
+      rotation 0 0 1 1.5708
+      name "wall(1)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.38 0.259983 0
+      rotation 0 0 1 1.5708
+      name "wall(10)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.38 -1.50001 0
+      rotation 0 0 1 1.5708
+      name "wall(9)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.38 -1.99001 0
+      rotation 0 0 1 1.5708
+      name "wall(8)"
+      size 0.01 0.25 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.81 -1.07001 0
+      rotation 0 0 1 1.5708
+      name "wall(2)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -2.26 1.00999 0
+      rotation 0 0 1 1.5708
+      name "wall(11)"
+      size 0.01 0.5 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.81 -1.45001 0
+      rotation 0 0 1 1.5708
+      name "wall(3)"
+      size 0.01 0.75 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+    Wall {
+      translation -3.81 -1.73001 0
+      rotation 0 0 1 1.5708
+      name "wall(4)"
+      size 0.01 1 0.1
+      appearance Roughcast {
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+        IBLStrength 25
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+Solid {
+  children [
+    Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_base_color.jpg"
+              ]
+            }
+            roughness 1
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_roughness.jpg"
+              ]
+            }
+            metalness 0
+            normalMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_normal.jpg"
+              ]
+            }
+            occlusionMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_occlusion.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -2.5 -2.5 0
+                2.5 -2.5 0
+                -2.5 2.5 0
+                2.5 2.5 0
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0 0
+                20 0
+                0 20
+                20 20
+              ]
+            }
+            coordIndex [
+              2, 0, 1, 3, -1
+            ]
+            texCoordIndex [
+              2, 0, 1, 3, -1
+            ]
+          }
+        }
+      ]
+      name "floor"
+      model "floor"
+      boundingObject Plane {
+        size 5 5
+      }
+      locked TRUE
+    }
+    Solid {
+      translation 2.505 0 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.005 2.5 0.05
+                0.005 2.5 0.05
+                0.005 2.5 -0.05
+                -0.005 2.5 -0.05
+                -0.005 -2.5 -0.05
+                0.005 -2.5 -0.05
+                0.005 -2.5 0.05
+                -0.005 -2.5 0.05
+                -0.005 -2.5 0.05
+                0.005 -2.5 0.05
+                0.005 2.5 0.05
+                -0.005 2.5 0.05
+                0.005 -2.5 -0.05
+                -0.005 -2.5 -0.05
+                -0.005 2.5 -0.05
+                0.005 2.5 -0.05
+                -0.005 -2.5 -0.05
+                -0.005 -2.5 0.05
+                -0.005 2.5 0.05
+                -0.005 2.5 -0.05
+                0.005 -2.5 0.05
+                0.005 -2.5 -0.05
+                0.005 2.5 -0.05
+                0.005 2.5 0.05
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0.002 0.02
+                0 0.02
+                0 0
+                0.002 0
+                0 0
+                0.002 0
+                0.002 0.02
+                0 0.02
+                0 0.002
+                0 0
+                1 0
+                1 0.002
+                0 0.002
+                0 0
+                1 0
+                1 0.002
+                1 0
+                1 0.02
+                0 0.02
+                0 0
+                0 0.02
+                0 0
+                1 0
+                1 0.02
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall"
+      model "box"
+      boundingObject Box {
+        size 0.01 5 0.1
+      }
+    }
+    Solid {
+      translation -2.505 0 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -0.005 2.5 0.05
+                0.005 2.5 0.05
+                0.005 2.5 -0.05
+                -0.005 2.5 -0.05
+                -0.005 -2.5 -0.05
+                0.005 -2.5 -0.05
+                0.005 -2.5 0.05
+                -0.005 -2.5 0.05
+                -0.005 -2.5 0.05
+                0.005 -2.5 0.05
+                0.005 2.5 0.05
+                -0.005 2.5 0.05
+                0.005 -2.5 -0.05
+                -0.005 -2.5 -0.05
+                -0.005 2.5 -0.05
+                0.005 2.5 -0.05
+                -0.005 -2.5 -0.05
+                -0.005 -2.5 0.05
+                -0.005 2.5 0.05
+                -0.005 2.5 -0.05
+                0.005 -2.5 0.05
+                0.005 -2.5 -0.05
+                0.005 2.5 -0.05
+                0.005 2.5 0.05
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                0.002 0.02
+                0 0.02
+                0 0
+                0.002 0
+                0 0
+                0.002 0
+                0.002 0.02
+                0 0.02
+                0 0.002
+                0 0
+                1 0
+                1 0.002
+                0 0.002
+                0 0
+                1 0
+                1 0.002
+                1 0
+                1 0.02
+                0 0.02
+                0 0
+                0 0.02
+                0 0
+                1 0
+                1 0.02
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#2"
+      model "box"
+      boundingObject Box {
+        size 0.01 5 0.1
+      }
+    }
+    Solid {
+      translation 0 2.505 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -2.51 0.005 0.05
+                2.51 0.005 0.05
+                2.51 0.005 -0.05
+                -2.51 0.005 -0.05
+                -2.51 -0.005 -0.05
+                2.51 -0.005 -0.05
+                2.51 -0.005 0.05
+                -2.51 -0.005 0.05
+                -2.51 -0.005 0.05
+                2.51 -0.005 0.05
+                2.51 0.005 0.05
+                -2.51 0.005 0.05
+                2.51 -0.005 -0.05
+                -2.51 -0.005 -0.05
+                -2.51 0.005 -0.05
+                2.51 0.005 -0.05
+                -2.51 -0.005 -0.05
+                -2.51 -0.005 0.05
+                -2.51 0.005 0.05
+                -2.51 0.005 -0.05
+                2.51 -0.005 0.05
+                2.51 -0.005 -0.05
+                2.51 0.005 -0.05
+                2.51 0.005 0.05
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                1 0.019920318725099605
+                0 0.019920318725099605
+                0 0
+                1 0
+                0 0
+                1 0
+                1 0.019920318725099605
+                0 0.019920318725099605
+                0 1
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 1
+                0 1
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 1
+                0.0019920318725099606 0
+                0.0019920318725099606 0.019920318725099605
+                0 0.019920318725099605
+                0 0
+                0 0.019920318725099605
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 0.019920318725099605
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#3"
+      model "box"
+      boundingObject Box {
+        size 5.02 0.01 0.1
+      }
+    }
+    Solid {
+      translation 0 -2.505 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_base_color.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_roughness.jpg"
+              ]
+            }
+            normalMap ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/brushed_aluminium/brushed_aluminium_normal.jpg"
+              ]
+            }
+          }
+          geometry IndexedFaceSet {
+            coord Coordinate {
+              point [
+                -2.51 0.005 0.05
+                2.51 0.005 0.05
+                2.51 0.005 -0.05
+                -2.51 0.005 -0.05
+                -2.51 -0.005 -0.05
+                2.51 -0.005 -0.05
+                2.51 -0.005 0.05
+                -2.51 -0.005 0.05
+                -2.51 -0.005 0.05
+                2.51 -0.005 0.05
+                2.51 0.005 0.05
+                -2.51 0.005 0.05
+                2.51 -0.005 -0.05
+                -2.51 -0.005 -0.05
+                -2.51 0.005 -0.05
+                2.51 0.005 -0.05
+                -2.51 -0.005 -0.05
+                -2.51 -0.005 0.05
+                -2.51 0.005 0.05
+                -2.51 0.005 -0.05
+                2.51 -0.005 0.05
+                2.51 -0.005 -0.05
+                2.51 0.005 -0.05
+                2.51 0.005 0.05
+              ]
+            }
+            texCoord TextureCoordinate {
+              point [
+                1 0.019920318725099605
+                0 0.019920318725099605
+                0 0
+                1 0
+                0 0
+                1 0
+                1 0.019920318725099605
+                0 0.019920318725099605
+                0 1
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 1
+                0 1
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 1
+                0.0019920318725099606 0
+                0.0019920318725099606 0.019920318725099605
+                0 0.019920318725099605
+                0 0
+                0 0.019920318725099605
+                0 0
+                0.0019920318725099606 0
+                0.0019920318725099606 0.019920318725099605
+              ]
+            }
+            coordIndex [
+              0, 1, 2, 3, -1, 4, 5, 6, 7, -1, 8, 9, 10, 11, -1, 12, 13, 14, 15, -1, 16, 17, 18, 19, -1, 20, 21, 22, 23, -1
+            ]
+            creaseAngle 1.5
+          }
+        }
+      ]
+      name "wall#4"
+      model "box"
+      boundingObject Box {
+        size 5.02 0.01 0.1
+      }
+    }
+  ]
+  name "rectangle arena"
+  model "rectangle arena"
+}
