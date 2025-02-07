@@ -11,8 +11,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.5396392647906111 0.5578973836417003 0.6305077106760822 1.9862622582241807
-  position -0.5176121877268285 -2.8334281254129063 13.053389585065533
+  orientation -0.11249308921655815 0.9845579103469648 0.13413063054997368 1.411144530873638
+  position -2.3497919988578975 -1.5496437313429592 10.340900202983526
 }
 TexturedBackground {
 }
@@ -2426,10 +2426,11 @@ RectangleArena {
     IBLStrength 25
   }
 }
-Group {
+Solid {
+  translation 1.73 1.48 0
   children [
     Wall {
-      translation 0.13 0.13 0.0003
+      translation 0.13 0.12 0.0003
       name "wall(208)"
       size 0.25 0.25 0.0001
       appearance Roughcast {
@@ -2462,4 +2463,115 @@ Group {
       }
     }
   ]
+}
+Solid {
+  translation -1.74 -1.76 0
+  children [
+    Wall {
+      translation 0.13 0.12 0.0003
+      name "wall(208)"
+      size 0.25 0.25 0.0001
+      appearance Roughcast {
+        colorOverride 1 0 0
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+    Wall {
+      translation 0.13 0.13 0.0002
+      name "wall(209)"
+      size 0.75 0.75 0.0001
+      appearance Roughcast {
+        colorOverride 1 0.333333 0
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+    Wall {
+      translation 0.13 0.13 0.0001
+      name "wall(210)"
+      size 1.25 1.25 0.0001
+      appearance Roughcast {
+        colorOverride 1 1 0.498039
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -1.52 1.25 0
+  children [
+    Wall {
+      translation 0.13 0.12 0.0003
+      name "wall(208)"
+      size 0.25 0.25 0.0001
+      appearance Roughcast {
+        colorOverride 1 0 0
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+    Wall {
+      translation 0.13 0.13 0.0002
+      name "wall(209)"
+      size 0.75 0.75 0.0001
+      appearance Roughcast {
+        colorOverride 1 0.333333 0
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+    Wall {
+      translation 0.13 0.13 0.0001
+      name "wall(210)"
+      size 1.25 1.25 0.0001
+      appearance Roughcast {
+        colorOverride 1 1 0.498039
+        textureTransform TextureTransform {
+          scale 2.4 1
+        }
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Wall {
+  translation -0.89 0.9 0
+  name "wall(208)"
+  size 0.1 0.1 0.01
+  appearance Roughcast {
+    colorOverride 0.333333 1 0
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 1.65 1.41 0
+  name "wall(209)"
+  size 0.1 0.1 0.01
+  appearance Roughcast {
+    colorOverride 0.333333 1 0
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 1.65 -1.6 0
+  name "wall(210)"
+  size 0.1 0.1 0.01
+  appearance Roughcast {
+    colorOverride 0.333333 1 0
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
 }
