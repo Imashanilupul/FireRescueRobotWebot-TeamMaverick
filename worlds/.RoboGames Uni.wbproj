@@ -6,4 +6,7 @@ maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 0 "controllers/RoboController/RoboController.py"
+globalOptionalRendering: JointAxes::LightSensorRays::DistanceSensorRays::CameraFrustums
 consoles: Console:All:All
+renderingDevicePerspectives: robot:camera;1;1;0;0
+renderingDevicePerspectives: robot:cm_0;1;1;0;0
