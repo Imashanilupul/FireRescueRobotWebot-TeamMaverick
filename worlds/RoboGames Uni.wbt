@@ -11,8 +11,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.3797569588946726 0.8092476360198161 0.44822194922539116 1.6166809126960175
-  position -0.4953635344885159 -0.5799058293869417 5.944355353161959
+  orientation 0.3226253620680764 0.011557504314002234 -0.9464561795690672 3.073799492762569
+  position 1.5389829162976618 -3.1446191357035094 1.160649191680611
 }
 TexturedBackground {
 }
@@ -2574,4 +2574,127 @@ Wall {
       scale 2.4 1
     }
   }
+}
+Robot {
+  translation -4.821009251684602e-08 -2.92877148810948 0.03588606678066773
+  rotation 0.9999901993535076 -0.0010317611809455604 -0.004305422836122971 0.0002470369198409649
+  children [
+    DEF Body Pose {
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.1 0.1 0.05
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 51.60737518543508
+        anchor 0.05 -0.04 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.05 -0.04 -0.02
+        rotation 0.5279993570041862 -0.6651570690515414 -0.5279988186482323 1.9676781747975516
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              roughness 1
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.016
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics DEF wheel_physics Physics {
+        }
+        linearVelocity -3.825507740817582e-08 -0.04800001449927658 -1.519021468599076e-07
+        angularVelocity 3.000003264802006 -6.79659005264929e-08 4.990892533698012e-07
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 51.60737613222594
+        anchor 0.05 0.05 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_4"
+        }
+      ]
+      endPoint Solid {
+        translation 0.05 0.05 -0.02
+        rotation 0.527997797068077 0.6651575787213577 0.5279997365158421 1.9676817961656443
+        children [
+          USE wheel
+        ]
+        name "solid(3)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+        linearVelocity 3.6071272639788966e-08 -0.04800002983015502 1.3627508172650177e-07
+        angularVelocity 3.00000326529234 -6.851362093866052e-08 4.981698370769679e-07
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 51.607376133110435
+        anchor -0.05 0.05 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_3"
+        }
+      ]
+      endPoint Solid {
+        translation -0.05 0.04999980521680408 -0.019999954618213047
+        rotation 0.527997797280234 0.6651575783845393 0.5279997367279993 1.967681796632657
+        children [
+          USE wheel
+        ]
+        name "solid(2)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+        linearVelocity 3.607125112092672e-08 -0.04800023275856982 -1.3550702014591955e-07
+        angularVelocity 3.000003271780637 -6.851334659568038e-08 4.981698642841842e-07
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 51.60737518485786
+        anchor -0.05 -0.04 -0.02
+      }
+      device [
+        RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.05 -0.04 -0.02
+        rotation 0.5279993568657327 -0.6651570692713493 -0.5279988185097786 1.9676781744927778
+        children [
+          USE wheel
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+        linearVelocity -3.825508997983588e-08 -0.04799993193512857 1.5116748658838634e-07
+        angularVelocity 3.0000032621613064 -6.796607356572546e-08 4.990892603340841e-07
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  controller "RoboController"
+  linearVelocity 5.855316450370608e-08 -0.048000074649861627 1.3024953261405314e-07
+  angularVelocity 3.2660114098046766e-06 3.091306316701765e-06 -4.350304067404072e-07
 }
