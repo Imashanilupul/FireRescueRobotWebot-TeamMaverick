@@ -11,8 +11,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.7746135492543391 0.06273390217953345 -0.6293157449396322 3.039743891593879
-  position -0.25924620802388 -2.935825984249426 1.329117436914223
+  orientation 0.6837426250445635 -0.03708789481039135 -0.728780152553363 3.220609057607731
+  position 0.1617436369533235 -2.9851541922106337 1.414658642851342
 }
 TexturedBackground {
 }
@@ -2642,6 +2642,9 @@ Robot {
       rotation 0 0 1 -1.5707953071795862
       name "ds_7"
     }
+    GPS {
+      name "gps_0"
+    }
     DistanceSensor {
       translation -0.03 0.00999989 0
       rotation 0 0 1 1.5708
@@ -2680,7 +2683,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.05 0.05 -0.02
-        rotation 0.527997797068077 0.665157578721358 0.527999736515842 1.9676817961656443
+        rotation 0.527997797068077 0.6651575787213581 0.5279997365158419 1.9676817961656443
         children [
           USE wheel
         ]
@@ -2728,7 +2731,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.05 -0.04 -0.02
-        rotation 0.5279993568657334 -0.6651570692713489 -0.5279988185097784 1.9676781744927767
+        rotation 0.5279993568657336 -0.6651570692713488 -0.5279988185097783 1.9676781744927767
         children [
           USE wheel
         ]
