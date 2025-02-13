@@ -1,172 +1,164 @@
-from controller import Robot
+from controller import Robot, GPS
 import numpy as np
-import matplotlib.pyplot as plt
-import time
+# import matplotlib.pyplot as plt
+import random
+import math
 
 # Initialize robot
-TIME_STEP = 32
-THRESHOLD = 900  # Distance sensor threshold
 robot = Robot()
+time_step = int(robot.getBasicTimeStep())
 
-# Motors
-motor_names = ["motor_1", "motor_2", "motor_3", "motor_4"]
-motors = []
-for name in motor_names:
-    motor = robot.getDevice(name)
-    motor.setPosition(float('inf'))  # Set to velocity control mode
-    motor.setVelocity(0.0)
-    motors.append(motor)
+# Initialize sensors and motors
+distance_sensors = [robot.getDevice(f'ps{i}') for i in range(8)]
+for sensor in distance_sensors:
+    sensor.enable(time_step)
+left_motor = robot.getDevice('left wheel motor')
+right_motor = robot.getDevice('right wheel motor')
+left_motor.setPosition(float('inf'))
+right_motor.setPosition(float('inf'))
 
-# Distance sensors
-sensors = []
-sensor_names = ["ds_1", "ds_2", "ds_3", "ds_4", "ds_5", "ds_6", "ds_7", "ds_8"]
-for name in sensor_names:
-    sensor = robot.getDevice(name)
-    sensor.enable(TIME_STEP)
-    sensors.append(sensor)
+# Initialize GPS
+gps = robot.getDevice('gps')
+gps.enable(time_step)
 
-# Position sensors (Encoders)
-ps_names = ["ps_1", "ps_2", "ps_3", "ps_4"]
-position_sensors = []
-for name in ps_names:
-    ps = robot.getDevice(name)
-    ps.enable(TIME_STEP)
-    position_sensors.append(ps)
+def wait_for_gps():
+    while robot.step(time_step) != -1:
+        x, y, _ = gps.getValues()
+        if not math.isnan(x) and not math.isnan(y):
+            break
 
-def reset_encoders():
-    for ps in position_sensors:
-        ps.getValue()
+wait_for_gps()
 
-def get_average_distance():
-    values = [ps.getValue() for ps in position_sensors]
-    return sum(values) / len(values)
+# Maze and mapping setup
+cell_size = 0.25
+maze_size = (20, 20)
+maze_map = np.zeros(maze_size)  # 0 = unvisited, 1 = visited, 2 = wall
 
-# Adjusted Sensor Mapping
-front_sensors = [sensors[2], sensors[6]]  # ds_3, ds_7 (front-left, front-right)
-left_sensors = [sensors[0], sensors[4]]   # ds_1, ds_5 (left side)
-right_sensors = [sensors[3], sensors[7]]  # ds_4, ds_8 (right side)
-rear_sensors = [sensors[1], sensors[5]]   # ds_2, ds_6 (rear)
+# Convert GPS position to grid index
 
-# Define grid parameters
-cell_size = 0.25  # Each cell is 25cm x 25cm
-maze_size = (20, 20)  # 5m x 5m maze (20x20 grid)
-maze = np.zeros(maze_size, dtype=int)  # 0 = unexplored, 1 = path, -1 = wall
+def get_grid_position():
+    x, y, _ = gps.getValues()
+    if math.isnan(x) or math.isnan(y):
+        return None  # Handle NaN values
+    row = max(0, min(maze_size[0] - 1, int((y + 2.5) / cell_size))) - 5 
+    col = max(0, min(maze_size[1] - 1, int((x + 2.5) / cell_size))) - 5 
+    return row, col
 
-# Robot's initial position in the grid
-start_x, start_y = 10, 0
-position = (start_x, start_y)
-maze[start_x][start_y] = 1
 
-# Fire Pit and Survivor Detection
-fire_zones = {}  # Dictionary to store fire pit locations
-survivors = {}   # Dictionary to store survivor locations
+# Movement settings
+speed = 2.8
+directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]  # Right, Up, Left, Down
+current_direction = 0
 
-def detect_fire_pit(x, y):
-    # Simulate fire pit detection based on robot's position
-    return (x, y) in fire_zones
+# Ensure initial position is valid
+while True:
+    current_position = get_grid_position()
+    if current_position is not None:
+        break
+    robot.step(time_step)
 
-def detect_survivor(x, y):
-    return (x, y) in survivors
+maze_map[current_position] = 1
 
-def rescue_survivor():
-    print("Rescuing survivor...")
-    time.sleep(3)  # Simulate rescue delay
+def move_forward():
+    left_motor.setVelocity(speed)
+    right_motor.setVelocity(speed)
+    robot.step(int(1000 * cell_size / speed))
+    update_position()
 
-# Visualization setup
-plt.ion()
-fig, ax = plt.subplots()
-def update_visualization():
-    ax.clear()
-    ax.imshow(maze, cmap='gray_r', origin='upper')
-    ax.set_title("Maze Mapping")
-    plt.draw()
-    plt.pause(0.05)
+def stop():
+    left_motor.setVelocity(0)
+    right_motor.setVelocity(0)
+    robot.step(time_step)
 
-# Movement functions
-def move_forward(distance=0.25):
-    reset_encoders()
-    while get_average_distance() < distance:
-        for motor in motors:
-            motor.setVelocity(10.0)
-        robot.step(TIME_STEP)
-    stop_motors()
-
-def turn_left():
-    motors[0].setVelocity(-5.0)
-    motors[1].setVelocity(-5.0)
-    motors[2].setVelocity(5.0)
-    motors[3].setVelocity(5.0)
-    robot.step(int(500 / TIME_STEP))
-    stop_motors()
-
-def turn_right():
-    motors[0].setVelocity(5.0)
-    motors[1].setVelocity(5.0)
-    motors[2].setVelocity(-5.0)
-    motors[3].setVelocity(-5.0)
-    robot.step(int(500 / TIME_STEP))
-    stop_motors()
-
-def stop_motors():
-    for motor in motors:
-        motor.setVelocity(0.0)
-    robot.step(TIME_STEP)
-
-def is_wall(sensor_group):
-    return any(sensor.getValue() > THRESHOLD for sensor in sensor_group)
-
-# Wall-following and mapping logic
-visited = set()
-stack = [position]
-
-directions = {
-    (0, 1): front_sensors,
-    (1, 0): right_sensors,
-    (0, -1): rear_sensors,
-    (-1, 0): left_sensors
-}
-
-while robot.step(TIME_STEP) != -1:
-    if not stack:
-        break  # If no more cells to explore, stop
-    
-    current_pos = stack.pop()
-    x, y = current_pos
-    visited.add(current_pos)
-    
-    if detect_survivor(x, y):
-        rescue_survivor()
-    
-    if detect_fire_pit(x, y):
-        print("Fire detected! Changing route.")
-        continue  # Skip moving into fire pit
-    
-    # Check available directions (right, forward, left, backward)
-    possible_directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-    available_directions = []
-    
-    for direction in possible_directions:
-        new_x, new_y = x + direction[0], y + direction[1]
-        if (0 <= new_x < maze_size[0] and 0 <= new_y < maze_size[1]
-                and (new_x, new_y) not in visited and not detect_fire_pit(new_x, new_y)):
-            if not is_wall(directions[direction]):
-                available_directions.append((new_x, new_y, direction))
-    
-    if available_directions:
-        new_x, new_y, _ = available_directions[0]
-        maze[new_x][new_y] = 1  # Mark as path
-        stack.append((new_x, new_y))
-        move_forward()
+def turn(degrees):
+    rotation_time = int((abs(degrees) / 90) * 800)
+    if degrees > 0:
+        left_motor.setVelocity(speed)
+        right_motor.setVelocity(-speed)
     else:
-        for direction in possible_directions:
-            new_x, new_y = x + direction[0], y + direction[1]
-            if (0 <= new_x < maze_size[0] and 0 <= new_y < maze_size[1]
-                    and maze[new_x][new_y] == 0):
-                maze[new_x][new_y] = -1  # Mark as wall
-    
-    update_visualization()
+        left_motor.setVelocity(-speed)
+        right_motor.setVelocity(speed)
+    robot.step(rotation_time)
+    stop()
+    update_direction(degrees)
 
-plt.ioff()
+def update_position():
+    global current_position
+    new_position = get_grid_position()
+    if new_position is not None:
+        current_position = new_position
+        maze_map[current_position] = 1
+
+def update_direction(degrees):
+    global current_direction
+    if degrees > 0:
+        current_direction = (current_direction + 1) % 4
+    else:
+        current_direction = (current_direction - 1) % 4
+
+def detect_walls():
+    if distance_sensors[0].getValue() > 80 or distance_sensors[7].getValue() > 80:
+        dx, dy = directions[current_direction]
+        wall_x = current_position[0] + dx
+        wall_y = current_position[1] + dy
+        if 0 <= wall_x < maze_size[0] and 0 <= wall_y < maze_size[1]:
+            maze_map[wall_x, wall_y] = 2  # Mark as wall
+
+def choose_new_direction():
+    global current_direction
+    # Read all 8 sensor values simultaneously
+    sensor_values = [sensor.getValue() for sensor in distance_sensors]
+    
+    # Define the mapping of sensors to directions
+    # Sensor order: [front, front-right, right, back-right, back, back-left, left, front-left]
+    # Directions: [0: front, 1: front-right, 2: right, 3: back-right, 4: back, 5: back-left, 6: left, 7: front-left]
+    
+    # Check which directions are free (no obstacle)
+    free_directions = [i for i, value in enumerate(sensor_values) if value < 80]
+    
+    if not free_directions:
+        # If no direction is free, turn around (180 degrees)
+        turn(180)
+        return
+    if 2 in free_directions and 5 in free_directions:
+        choose_direction = 2
+    elif 2 in free_directions and 7 in free_directions or 0 in free_directions:
+        choose_direction = 6
+    elif 5 in free_directions and 7 in free_directions or 0 in free_directions:
+        choose_direction = 1
+    else:
+        # Choose the first free direction (you can modify this logic to prioritize certain directions)
+        chosen_direction = free_directions[0]
+    
+    # Calculate the required turn angle
+    if chosen_direction == 0:  # Front (no turn needed)
+        return
+    elif chosen_direction == 1:  # Front-right (turn 45 degrees right)
+        turn(-90)
+    elif chosen_direction == 2:  # Right (turn 90 degrees right)
+        turn(-180)
+    elif chosen_direction == 3:  # Back-right (turn 135 degrees right)
+        turn(-180)
+    elif chosen_direction == 4:  # Back (turn 180 degrees)
+        turn(180)
+    elif chosen_direction == 5:  # Back-left (turn 225 degrees right or -135 degrees)
+        turn(180)
+    elif chosen_direction == 6:  # Left (turn 270 degrees right or -90 degrees)
+        turn(90)
+    elif chosen_direction == 7:  # Front-left (turn 315 degrees right or -45 degrees)
+        return
+        
+# Main loop
+while robot.step(time_step) != -1:
+    detect_walls()
+    front_obstacle = distance_sensors[0].getValue() > 500 or distance_sensors[7].getValue() > 500
+    if front_obstacle:
+        choose_new_direction()
+    else:
+        move_forward()
+    
+    # Real-time visualization (optional)
+    # plt.imshow(maze_map, cmap='gray_r', origin='lower')  # Ensure correct orientation
+    # plt.pause(0.1)
+
 plt.show()
-print("Mapping complete:")
-print(maze)
